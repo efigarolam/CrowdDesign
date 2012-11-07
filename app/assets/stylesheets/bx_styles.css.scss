@@ -5,45 +5,47 @@
  * background property for each of the five styles below
  */
 
+ @mixin bx {
+ 	position:absolute;
+ 	top:30%;
+ 	right:-50px;
+ 	z-index:999;
+ 	width: 24px;
+ 	height: 54px;
+ 	text-indent: -999999px;
+ }
+ 
+ @mixin bx-thecrowd {
+ 	display:block;
+ 	margin-top:250px;
+ 	z-index:999;
+ 	width: 24px;
+ 	height: 54px;
+ }
+
 /*next button*/
 .bx-next {
-	position:absolute;
-	top:30%;
-	right:-50px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
-	text-indent: -999999px;
+	@import bx
+	
 	background: url(/assets/gray_next.png) no-repeat;
 }
 
 .bx-next-thecrowd {
-	display:block;
-	margin-top:250px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
+	@import bx-thecrowd
+	
 	background: url(/assets/gray_next.png) no-repeat;
 }
 
 /*previous button*/
 .bx-prev {
-	position:absolute;
-	top:30%;
-	left:-50px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
-	text-indent: -999999px;
+	@import bx;
+	
 	background: url(/assets/gray_prev.png) no-repeat;
 }
 
 .bx-prev-thecrowd {
-	display:block;
-	margin-top:250px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
+	@import bx-thecrowd
+	
 	background: url(/assets/gray_prev.png) no-repeat;
 }
 
