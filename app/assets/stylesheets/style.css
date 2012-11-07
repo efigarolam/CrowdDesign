@@ -1,0 +1,711 @@
+/* Erik Meyer CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+:focus {outline:0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+p, ul, small, ol, li, h1, h2, h3, h4, h5, h6, blockquote, a, div, span {-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+img {-ms-interpolation-mode: bicubic;}
+input[type="submit"], input[type="button"], label {cursor:pointer;}
+textarea{resize:none}
+.clearer {clear:both}
+menu, nav, ul, ol {padding:0;}
+ol, ul {list-style-position:inside;}
+
+/* Le styles */
+
+@import url(http://fonts.googleapis.com/css?family=Six+Caps);
+@font-face {
+    font-family: 'SixCapsRegular';
+    src: url('../fonts/sixcaps-webfont.eot');
+    src: url('../fonts/sixcaps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sixcaps-webfont.woff') format('woff'),
+         url('../fonts/sixcaps-webfont.ttf') format('truetype'),
+         url('../fonts/sixcaps-webfont.svg#SixCapsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Six Caps', 'SixCapsRegular', sans-serif;font-weight:normal;}
+
+body {
+	overflow: auto; 
+	overflow-x: hidden;
+	color:#111;
+	font-size:24px;
+	font-family:'Trebuchet MS', Trebuchet, 'Helvetica Neue', Helvetica, sans-serif;
+	background:#151515;
+	position:relative;
+}
+
+header h1 {
+	text-indent:-9999px;
+	display:block;
+	width:142px;
+	height:142px;
+	margin:0 auto;
+	top:54px;
+	position:relative;
+	background: url(/assets/creative_logo.png) no-repeat;
+}
+
+.hobby_logo {
+	background: url(/assets/hobby_creative_logo.png) no-repeat;
+}
+
+.mistery_logo {
+	background: url(/assets/mistery_creative_logo.png) no-repeat;
+}
+
+.sample_logo {
+	background: url(/assets/sample_creative_logo.png) no-repeat;
+}
+
+.thecrowd_logo {
+	background: url(/assets/thecrowd_creative_logo.png) no-repeat;
+}
+
+footer {
+	margin-top:80px;
+	font-size:11px;
+	margin-bottom:30px;
+}
+
+footer p {
+	text-align:center;
+}
+
+.bg_page_default {background:url(/assets/background.png) no-repeat top center #dcdcc0;position:fixed;width:100%;height:100%;top:500;left:0;z-index:-1;}
+/*#bg_design {background:url(/assets/bg-design.jpg) no-repeat top center #dcdcc0;position:fixed;width:100%;height:100%;top:0;left:0;z-index:1;}*/
+
+.bg_samplework {
+	background:url(/assets/bg_page_samplework.png) no-repeat top center #dcdcc0; position:fixed;width:100%;height:100%;top:500;left:0;z-index:-1;
+}
+
+.bg_thecrowd {
+	background:url(/assets/bg_page_thecrowd.png) no-repeat top center #dcdcc0; position:fixed;width:100%;height:100%;top:500;left:0;z-index:-1;
+}
+
+.bg_misterybox {
+	background:url(/assets/bg_page_misterybox.png) no-repeat top center #dcdcc0; position:fixed;width:100%;height:100%;top:500;left:0;z-index:-1;
+}
+
+.bg_hobbystorage{
+	background:url(/assets/bg_page_hobbystorage.png) no-repeat top center #dcdcc0; position:fixed;width:100%;height:100%;top:500;left:0;z-index:-1;
+}
+
+/* Sections General */
+section {
+	text-align:center;
+	margin:0;
+}
+
+section h1 {
+	width:232px;
+	text-align:center;
+	color:#6e6c67;
+	margin:0 auto;cursor:pointer;
+	text-transform:uppercase;
+	position:relative;
+	z-index:4;
+}
+
+section h1:hover {
+	color:#332568;
+}
+
+.thecrowd_hover:hover {
+	color:#dadada;
+}
+
+.hobby_hover:hover {
+	color:#2f2f2f;
+}
+
+.info-wrapper {background:url(/assets/bg-lines.jpg) repeat top left;display:none;z-index:2;position:relative;}
+.info-wrap-inner {background:url(/assets/sprite.png) no-repeat center -229px;margin:0 auto;text-align:center;position:relative;}
+.info-wrap-inner a {
+	font-size:1.2em;
+}
+
+.slider_wrapper {
+	width:1060px;	
+	margin:0 auto;
+	padding-top:35px;
+}
+
+.slider_wrapper2 {
+	width:935px;	
+	margin:0 auto;
+	padding-top:35px;
+}
+
+.thecrowd_float_left {
+	float:left;
+}
+
+.thecrowd_float_left1 {
+	float:left;
+	margin-right:20px;
+}
+
+#the_crowd_slider_bodies {
+	width:215px;
+	height:100%;
+	font-size:14px;
+}
+
+#the_crowd_slider_legs {
+	width:215px;
+	height:100%;
+	font-size:14px;
+}
+
+.the_crowd_heads {
+	font-size:14px;
+}
+
+.thecrowd_head {
+	width:196px;
+	height:207px;
+	display:block;
+	float:left;
+	margin-right:19px;
+}
+
+.show_details_karla {
+	display:block;
+	width:22px;
+	height:22px;
+	float:right;
+	margin-right:8px;
+	margin-top:-3px;
+}
+
+.show_details_fabian {
+	display:block;
+	width:22px;
+	height:22px;
+	float:right;
+	margin-right:8px;
+}
+
+.hide_details_fabian {
+	display:block;
+	width:17px;
+	height:17px;
+	float:right;
+	margin-right:8px;
+	margin-top:50px;
+}
+
+.hide_details_karla {
+	display:block;
+	width:17px;
+	height:17px;
+	float:right;
+	margin-right:8px;
+	margin-top:61px;
+}
+
+.show_details_norberto {
+	display:block;
+	width:22px;
+	height:22px;
+	float:right;
+	margin-right:9px;
+	margin-top:18px;
+}
+
+.hide_details_norberto {
+	display:block;
+	width:17px;
+	height:17px;
+	float:right;
+	margin-right:8px;
+	margin-top:62px;
+}
+
+.show_details_haro {
+	display:block;
+	width:22px;
+	height:22px;
+	float:right;
+	margin-right:8px;
+	margin-top:-6px;
+}
+
+.hide_details_haro {
+	display:block;
+	width:17px;
+	height:17px;
+	float:right;
+	margin-right:8px;
+	margin-top:49px;
+}
+
+.thecrowd_head_hidden {
+	display:none;
+}
+
+.person_horizontal_name {
+	text-transform: uppercase;
+	font-family: 'Oswald', serif;
+	font-size:1.8em;
+	font-weight: normal;
+	text-align: justify;
+	text-indent: 15px;
+}
+
+.person_horizontal_fabian_name {
+	margin-top:15px;
+	color:#000;
+}
+
+.person_horizontal_fabian_lastname {
+	color:#f19019;
+}
+
+.person_horizontal_karla_name {
+	margin-top:15px;
+	color:#000;
+}
+
+.person_horizontal_karla_lastname {
+	color:#d4d4b2;
+}
+
+.person_horizontal_norberto_name {
+	margin-top:15px;
+	color:#000;
+}
+
+.person_horizontal_norberto_lastname {
+	color:#7bc2c2;
+}
+
+.person_horizontal_haro_name {
+	margin-top:15px;
+	color:#000;
+}
+
+.person_horizontal_haro_lastname {
+	color:#90c855;
+}
+
+.person_horizontal_description {
+	text-transform: uppercase;
+	font-family: 'Oswald', serif;
+	font-size:.9em;
+	font-weight: normal;
+	text-align: justify;
+	margin-left: 15px;
+	color:#000;
+	margin-top: 15px;
+}
+
+.person_vertical_name {
+	text-transform: uppercase;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-o-transform: rotate(270deg);
+	white-space:nowrap;
+	font-family: 'Oswald', serif;
+	font-size:1.8em;
+	font-weight: normal;
+}
+
+.person_vertical_name_karla {
+	color:#aeae93;
+	margin-left:-160px;
+	margin-top:153px;
+}
+
+.person_vertical_name_fabian {
+	color:#f19019;
+	margin-left:-160px;
+	margin-top:150px;
+}
+
+.person_vertical_name_norberto {
+	color:#00a4a6;
+	margin-left:-160px;
+	margin-top:132px;
+}
+
+.person_vertical_name_haro {
+	color:#648d3e;
+	margin-left:-160px;
+	margin-top:156px;
+}
+
+.thecrowd_head_karla {
+	background:url("/assets/thecrowd_head_karla.png") no-repeat;
+}
+
+.thecrowd_head_small_karla {
+	background:url("/assets/thecrowd_head_small_karla.png") no-repeat;
+}
+
+.thecrowd_head_fabian {
+	background:url("/assets/thecrowd_head_fabian.png") no-repeat;
+}
+
+.thecrowd_head_small_fabian {
+	background:url("/assets/thecrowd_head_small_fabian.png") no-repeat;
+}
+
+.thecrowd_head_norberto {
+	background:url("/assets/thecrowd_head_norberto.png") no-repeat;
+}
+
+.thecrowd_head_small_norberto {
+	background:url("/assets/thecrowd_head_small_norberto.png") no-repeat;
+}
+
+.thecrowd_head_haro {
+	background:url("/assets/thecrowd_head_haro.png") no-repeat;
+}
+
+.thecrowd_head_small_haro {
+	background:url("/assets/thecrowd_head_small_haro.png") no-repeat;
+}
+
+.thecrowd_body {
+	margin-top:10px;
+	width:196px;
+	height:132px;
+	display:block;
+}
+
+#thecrowd_body_karla {
+	background:url("/assets/thecrowd_body_karla.png") no-repeat;
+}
+
+#thecrowd_body_fabian {
+	background:url("/assets/thecrowd_body_fabian.png") no-repeat;
+}
+
+#thecrowd_body_norberto {
+	background:url("/assets/thecrowd_body_norberto.png") no-repeat;
+}
+
+#thecrowd_body_haro {
+	background:url("/assets/thecrowd_body_haro.png") no-repeat;
+}
+
+.thecrowd_legs {
+	margin-top:10px;
+	width:196px;
+	height:234px;
+	display:block;
+}
+
+#thecrowd_legs_karla {
+	background:url("/assets/thecrowd_legs_karla.png") no-repeat;
+}
+
+#thecrowd_legs_fabian {
+	background:url("/assets/thecrowd_legs_fabian.png") no-repeat;
+}
+
+#thecrowd_legs_norberto {
+	background:url("/assets/thecrowd_legs_norberto.png") no-repeat;
+}
+
+#thecrowd_legs_haro {
+	background:url("/assets/thecrowd_legs_haro.png") no-repeat;
+}
+
+#sample_work_slider {
+	width:350px;
+	height:100%;
+}
+
+.sample_work_name {
+	font-family:'Oswald', serif;
+	text-align:justify;
+	color:white;
+	text-transform:uppercase;
+	text-indent:15px;
+	font-size:1.2em;
+	margin-top:10px;
+}
+
+.sample_work_date {
+	font-family:'Oswald', serif;
+	text-align:justify;
+	color:white;
+	text-transform:uppercase;
+	text-indent:15px;
+	font-size:0.85em;
+	margin-top:5px;
+}
+
+#hobby_storage_slider {
+	width:1060px;
+	height:100%;
+	font-size:14px;
+}
+
+.hobby_slide_left {
+	width:501px;
+	height:189px;
+	float:left;
+	margin-left:10px;
+}
+
+.hobby_slide_right {
+	width:525px;
+	height:100%;
+	float:left;
+	margin-left:15px;
+}
+
+.hobby_slide_right p {
+	font-family:'Trebuchet MS', serif;
+	text-align:justify;
+}
+
+.hobby_title {
+	font-family:'Oswald', serif;
+	text-align:justify;
+	color:white;
+	font-size:1.1em;
+	text-transform:uppercase;
+}
+
+.hobby_type, .hobby_price, .hobby_sub_text {
+	color: white;
+	font-size:.75em;
+	text-transform:uppercase;
+}
+
+.hobby_price {
+	margin-top:15px;
+}
+
+.hobby_subtitle {
+	color:#d74927;
+	font-weight:bold;
+	font-size:.75em;
+	text-transform:uppercase;
+}
+
+.hobby_description {
+	text-transform:none;
+	color: white;
+	font-size:.75em;
+	width:300px;
+}
+
+.float_left {
+	margin-top:15px;
+	float:left;
+}
+
+.hobby_add_to_cart {
+	width:100px;
+	height:35px;
+	background-color:#d74927;
+	font-family:'Oswald', serif;
+	text-align:center;
+	color:white;
+	font-size:1.1em;
+	text-transform:uppercase;
+	border:none;
+	margin-left:80px;
+	margin-top:50px;
+	cursor:pointer;
+}
+
+.hobby_add_to_cart:hover {
+	background-color:#ff461a;
+}
+
+.margin_left {
+	margin-left:20px;
+}
+
+#mistery_box_slider {
+	width:530px;
+	height:100%;
+	font-size:14px;
+}
+
+.mistery_slide {
+	width:460px;
+	margin-left:15px;
+	padding-top:25px;
+	padding-left:20px;
+	padding-right:20px;
+	height:230px;
+	background-color:#e65e3d;
+}
+
+.mistery_slide p {
+	font-family:'Trebuchet MS', serif;
+	text-align:justify;
+}
+
+.mistery_title {
+	font-family:'Oswald', serif;
+	text-align:justify;
+	color:#83230c;
+	font-size:1.1em;
+	text-transform:uppercase;
+}
+
+.mistery_tags_title {
+	color:white;
+	text-transform:uppercase;
+	font-size:.8em;
+}
+
+.mistery_tags {
+	color:#83230c;
+	text-transform:uppercase;
+	font-size:1em;
+}
+
+.mistery_quote_globe {
+	margin-top:10px;
+	background-color:white;
+	width:auto;
+	height:auto;
+	padding:15px;
+}
+
+.mistery_big_quote {
+	font-size:102px;
+	color:#fde1da;
+	height:45px;
+	float:left;
+	margin-top:-8px;
+}
+
+.mistery_quote {
+	float:left;
+	width:85%;
+	color:#bc3515;
+	text-transform:uppercase;
+	font-size:16px;
+	margin-top:2px;
+	margin-left:5px;
+}
+
+.mistery_quote_triangle {
+	background:url(/assets/misterybox_quote_triangle.png) no-repeat top left;
+	height:10px;
+}
+
+.mistery_content { 
+	margin-top:10px;
+	color:white;
+	font-size:.95em;
+}
+
+.mistery_image {
+	float:left;
+}
+
+.mistery_float {
+	float:left;
+	margin-left:15px;
+	width:170px;
+}
+
+.clearfix {
+	clear:both;
+}
+
+#content_the_crowd {
+	background:url(/assets/bg_samplework.png) repeat #0e0e0e;
+	height:690px;
+	filter:Alpha(opacity=90);
+	opacity:0.90;
+}
+
+#content_the_crowd .info-wrap-top-arrow {
+	background:url(/assets/thecrowd_top_arrow.png) no-repeat top center;
+	height:10px;
+}
+
+#content_sample_work {
+	background:url(/assets/bg_samplework.png) repeat #243434;
+	height:350px;
+	filter:Alpha(opacity=90);
+	opacity:0.90;
+	font-size:14px;
+}
+
+#content_sample_work .info-wrap-top-arrow {
+	background:url(/assets/samplework_top_arrow.png) no-repeat top center;
+	height:10px;
+}
+
+#content_mistery_box  {
+	background:url(/assets/bg_samplework.png) repeat #243434;
+	height:360px;
+	filter:Alpha(opacity=90);
+	opacity:0.90;
+}
+
+#content_mistery_box  .info-wrap-top-arrow {
+	background:url(/assets/misterybox_top_arrow.png) no-repeat top center;
+	height:10px;
+}
+
+#content_hobby_storage {
+	background:url(/assets/bg_samplework.png) repeat #0e0e0e;
+	height:280px;
+	filter:Alpha(opacity=90);
+	opacity:0.90;
+}
+
+#content_hobby_storage .info-wrap-top-arrow {
+	background:url(/assets/hobbystorage_top_arrow.png) no-repeat top center;
+	height:10px;
+}
+
+section#mistery_box {
+	font-size:97px;
+}
+
+section#hobby_storage {
+	font-size:79px;
+}
+
+section#make_contact {
+	font-size:86px;
+}
+
+section#sample_work {
+	font-size:90px;
+}
+
+section#the_crowd {
+	font-size:110px;
+}

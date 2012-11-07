@@ -1,0 +1,328 @@
+!!! 5
+
+%html{:lang => "en"}
+	%head
+		%title Crowd Interactive - Design
+		%meta{:charset => "utf-8"}/
+		%meta{:content => "Crowd Interactive", :property => "og:title"}/
+		%meta{:content => "http://www.crowdint.com", :property => "og:url"}/
+		%meta{:content => "http://assets0.crowdint.com/assets/logo/ocre.png", :property => "og:image"}/
+		%meta{:content => "We are a leading Ruby and Rails consultancy firm based in Mexico currently doing bussiness with startups in the United States. We specialize in builing and growing Rails applications, by increasing your IT crew onsite or offsite. We pick our projects carefully, as we only work with companies we believe in.", :property => "og:description"}/
+		%meta{:content => "We are a leading Ruby and Rails consultancy firm based in Mexico currently doing bussiness with startups in the United States. We specialize in builing and growing Rails applications, by increasing your IT crew onsite or offsite. We pick our projects carefully, as we only work with companies we believe in.", :property => "description"}/
+
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= csrf_meta_tags %>
+		%link{:href => "http://fonts.googleapis.com/css?family=Six+Caps", :rel => "stylesheet"}/
+		%link{:href => "http://fonts.googleapis.com/css?family=Oswald", :rel => "stylesheet"}/
+
+	%body
+		#bg_default.bg_page_default<
+		#bg_design<
+
+		%header
+			%h1 Crowd Interactive
+
+		%footer
+			%p Crowd Interactive © 2012, This site is protected by copyright. Under U.S and international law. All rights reserved.
+
+		%section#the_crowd
+			%h1 The Crowd
+			#content_the_crowd.info-wrapper.hiddable
+				.info-wrap-inner
+					.info-wrap-top-arrow<
+
+					.slider_wrapper2
+						.thecrowd_float_left1
+							%a.bx-prev-thecrowd.the_crowd_random_slide{:href => "#"}<
+						.thecrowd_float_left
+							.the_crowd_heads
+								.thecrowd_head.thecrowd_head_karla
+									%p.person_vertical_name.person_vertical_name_karla Karla
+									%a.show_details_karla{:href => "#"}<
+								.thecrowd_head_hidden.thecrowd_head_hidden_karla
+									%p.person_horizontal_name.person_horizontal_karla_name
+									%p.person_horizontal_name.person_horizontal_karla_lastname Dominguez
+									%p.person_horizontal_description
+										Product designer %br
+										UX/UI Expert %br
+										Warrior Princess
+									
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Crowd Interactive - Design</title>
+	
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta content='Crowd Interactive' property='og:title' />
+    <meta content='http://www.crowdint.com' property='og:url' />
+    <meta content='http://assets0.crowdint.com/assets/logo/ocre.png' property='og:image' />
+    <meta content='We are a leading Ruby and Rails consultancy firm based in Mexico currently doing bussiness with startups in the United States. We specialize in builing and growing Rails applications, by increasing your IT crew onsite or offsite. We pick our projects carefully, as we only work with companies we believe in.' property='og:description' />
+    <meta content='We are a leading Ruby and Rails consultancy firm based in Mexico currently doing bussiness with startups in the United States. We specialize in builing and growing Rails applications, by increasing your IT crew onsite or offsite. We pick our projects carefully, as we only work with companies we believe in.' name='description' />
+    
+    <!-- Styles -->
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= csrf_meta_tags %>
+	<link href="http://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="bg_default" class="bg_page_default"></div>
+	<div id="bg_design"></div>
+  
+	<header>
+		<h1>Crowd Interactive</h1>
+	</header>
+	
+	<footer>
+		<p>Crowd Interactive © 2012, This site is protected by copyright. Under U.S and international law. All rights reserved.</p>
+	</footer>
+	
+	<section id="the_crowd">
+        
+        <h1>The Crowd</h1>
+        <div class="info-wrapper hiddable" id="content_the_crowd">
+            <div class="info-wrap-inner">
+                <div class="info-wrap-top-arrow"></div>
+            
+                <div class="slider_wrapper2">
+                    <div class="thecrowd_float_left1">
+                        <a href="" class="bx-prev-thecrowd the_crowd_random_slide"></a>
+                    </div>
+                    <div class="thecrowd_float_left">
+                        <div class="the_crowd_heads">
+                            <div class="thecrowd_head thecrowd_head_karla">
+                                <p class="person_vertical_name person_vertical_name_karla">Karla</p>
+                                <a class="show_details_karla" href="#"></a>
+                            </div>
+                            <div class="thecrowd_head_hidden thecrowd_head_hidden_karla">
+                                <p class="person_horizontal_name person_horizontal_karla_name">Karla</p>
+                                <p class="person_horizontal_name person_horizontal_karla_lastname">Dominguez</p>
+                                <p class="person_horizontal_description">
+                                    Product designer<br />
+                                    UX/UI Expert<br />
+                                    Warrior Princess
+                                </p>
+                            </div>
+                            <div class="thecrowd_head thecrowd_head_fabian">
+                                <p class="person_vertical_name person_vertical_name_fabian">Fabian</p>
+                                <a class="show_details_fabian" href="#"></a>
+                            </div>
+                            <div class="thecrowd_head_hidden thecrowd_head_hidden_fabian">
+                                <p class="person_horizontal_name person_horizontal_fabian_name">Fabian</p>
+                                <p class="person_horizontal_name person_horizontal_fabian_lastname">Mendo</p>
+                                <p class="person_horizontal_description">
+                                    Web graphic designer<br />
+                                    HTML5, CSS3<br />
+                                    FIFA 2012 Champion<br />
+                                    Swimmer
+                                </p>
+                            </div>
+                            <div class="thecrowd_head thecrowd_head_norberto">
+                                <p class="person_vertical_name person_vertical_name_norberto">Norberto</p>
+                                <a class="show_details_norberto" href="#"></a>
+                            </div>
+                            <div class="thecrowd_head_hidden thecrowd_head_hidden_norberto">
+                                <p class="person_horizontal_name person_horizontal_norberto_name">Norberto</p>
+                                <p class="person_horizontal_name person_horizontal_norberto_lastname">Hernandez</p>
+                                <p class="person_horizontal_description">
+                                    Front End<br />
+                                    HTML & CSS Expert<br />
+                                    Revolutionary man
+                                </p>
+                            </div>
+                            <div class="thecrowd_head thecrowd_head_haro">
+                                <p class="person_vertical_name person_vertical_name_haro">Haro</p>
+                                <a class="show_details_haro" href="#"></a>
+                            </div>
+                            <div class="thecrowd_head_hidden thecrowd_head_hidden_haro">
+                                <p class="person_horizontal_name person_horizontal_haro_name">Jesus</p>
+                                <p class="person_horizontal_name person_horizontal_haro_lastname">Haro</p>
+                                <p class="person_horizontal_description">
+                                    Web graphic designer<br />
+                                    Ilustrator<br />
+                                    Amateur photographer<br />
+                                    Cinephile
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>    
+                        <ul id="the_crowd_slider_bodies">
+                            <li>
+                                <div id="thecrowd_body_karla" class="thecrowd_body"></div>
+                            </li>
+                            <li>
+                                <div id="thecrowd_body_fabian" class="thecrowd_body"></div>
+                            </li>
+                            <li>
+                                <div id="thecrowd_body_norberto" class="thecrowd_body"></div>
+                            </li>
+                            <li>
+                                <div id="thecrowd_body_haro" class="thecrowd_body"></div>
+                            </li>
+                        </ul>
+                        <ul id="the_crowd_slider_legs">
+                            <li>
+                                <div id="thecrowd_legs_karla" class="thecrowd_legs"></div>
+                            </li>
+                            <li>
+                                <div id="thecrowd_legs_fabian" class="thecrowd_legs"></div>
+                            </li>
+                            <li>
+                                <div id="thecrowd_legs_norberto" class="thecrowd_legs"></div>
+                            </li>
+                            <li>
+                                <div id="thecrowd_legs_haro" class="thecrowd_legs"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="thecrowd_float_left">
+                        <a href="" class="bx-next-thecrowd the_crowd_random_slide"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<%= yield %>
+
+	<section id="mistery_box">
+		<h1>Mistery Box</h1>
+		<div class="info-wrapper hiddable" id="content_mistery_box">
+			<div class="info-wrap-inner">
+				<div class="info-wrap-top-arrow"></div>
+				<div class="slider_wrapper">
+					<ul id="mistery_box_slider">
+						<li>
+							<div class="mistery_slide">
+								<p class="mistery_title">The best way to use the wireframes</p>
+								<p class="mistery_tags_title">Tags. <span class="mistery_tags">Article | Technical</span></p>
+								<div class="mistery_quote_globe">
+									<p class="mistery_big_quote">“</p> <p class="mistery_quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<div class="clearfix"></div>
+								</div>
+								<div class="mistery_quote_triangle"></div>
+								<p class="mistery_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>								
+							</div>
+						</li>			
+						<li>
+							<div class="mistery_slide">
+								<img class="mistery_image" src="img/misterybox_image_example.png" alt="" />
+								<div class="mistery_float">
+									<p class="mistery_title">Inspiring sites</p>
+									<p class="mistery_tags_title">Tags. <span class="mistery_tags">Article | Inspiration</span></p>
+									<p class="mistery_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>								
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>			
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="hobby_storage">
+		<h1>Hobby Storage</h1>
+		<div class="info-wrapper hiddable" id="content_hobby_storage">
+			<div class="info-wrap-inner">
+				<div class="info-wrap-top-arrow"></div>
+				<div class="slider_wrapper">
+					<ul id="hobby_storage_slider">
+						<li>
+							<div class="hobby_slide_left">
+								<img src="img/hobbystorage_slider_example.png"/>
+							</div>
+							<div class="hobby_slide_right">
+								<p class="hobby_title">El Cuino Olimpico</p>
+								<p class="hobby_type">Poster</p>
+								<p class="hobby_price">$9 USD / $100 Pesos</p>
+								<div class="float_left">
+									<p class="hobby_subtitle">Paper:</p>
+									<p class="hobby_sub_text">Opalina</p>
+								</div>
+								<div class="float_left margin_left">
+									<p class="hobby_subtitle">Size:</p>
+									<p class="hobby_sub_text">90 x 50 mm</p>
+								</div>
+								<div class="clearfix"></div>
+								<div class="float_left">
+									<p class="hobby_subtitle">Description:</p>
+									<p class="hobby_description">Lorem ipsum dolor sit amet, consectetur adipiscing alit. Donec consequat pretium consectetur.</p>
+								</div>
+								<div class="float_left margin_left">
+									<button class="hobby_add_to_cart">Add to cart</button>
+								</div>																
+							</div>
+						</li>
+						<li>
+							<div class="hobby_slide_left">
+								<img src="img/hobbystorage_slider_example.png"/>
+							</div>
+							<div class="hobby_slide_right">
+								<p class="hobby_title">El Cuino Olimpico</p>
+								<p class="hobby_type">Poster</p>
+								<p class="hobby_price">$9 USD / $100 Pesos</p>
+								<div class="float_left">
+									<p class="hobby_subtitle">Paper:</p>
+									<p class="hobby_sub_text">Opalina</p>
+								</div>
+								<div class="float_left margin_left">
+									<p class="hobby_subtitle">Size:</p>
+									<p class="hobby_sub_text">90 x 50 mm</p>
+								</div>
+								<div class="clearfix"></div>
+								<div class="float_left">
+									<p class="hobby_subtitle">Description:</p>
+									<p class="hobby_description">Lorem ipsum dolor sit amet, consectetur adipiscing alit. Donec consequat pretium consectetur.</p>
+								</div>
+								<div class="float_left margin_left">
+									<button class="hobby_add_to_cart">Add to cart</button>
+								</div>																
+							</div>
+						</li>
+						<li>
+							<div class="hobby_slide_left">
+								<img src="img/hobbystorage_slider_example.png"/>
+							</div>
+							<div class="hobby_slide_right">
+								<p class="hobby_title">El Cuino Olimpico</p>
+								<p class="hobby_type">Poster</p>
+								<p class="hobby_price">$9 USD / $100 Pesos</p>
+								<div class="float_left">
+									<p class="hobby_subtitle">Paper:</p>
+									<p class="hobby_sub_text">Opalina</p>
+								</div>
+								<div class="float_left margin_left">
+									<p class="hobby_subtitle">Size:</p>
+									<p class="hobby_sub_text">90 x 50 mm</p>
+								</div>
+								<div class="clearfix"></div>
+								<div class="float_left">
+									<p class="hobby_subtitle">Description:</p>
+									<p class="hobby_description">Lorem ipsum dolor sit amet, consectetur adipiscing alit. Donec consequat pretium consectetur.</p>
+								</div>
+								<div class="float_left margin_left">
+									<button class="hobby_add_to_cart">Add to cart</button>
+								</div>																
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="make_contact">
+		<h1>Make Contact</h1>
+	</section>
+	
+	<!-- Engine -->
+	<%= javascript_include_tag "application" %>
+</body>
+
+</html>
