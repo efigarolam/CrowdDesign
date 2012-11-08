@@ -5,6 +5,7 @@
  * background property for each of the five styles below
  */
 
+
 /*next button*/
 .bx-next {
 	position:absolute;
@@ -30,7 +31,7 @@
 .bx-prev {
 	position:absolute;
 	top:30%;
-	left:-50px;
+	right:-50px;
 	z-index:999;
 	width: 24px;
 	height: 54px;
