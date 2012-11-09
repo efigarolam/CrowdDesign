@@ -90,11 +90,11 @@ footer {
 	margin-top:80px;
 	font-size:11px;
 	margin-bottom:30px;
+	p {
+		text-align:center;
+	}
 }
 
-footer p {
-	text-align:center;
-}
 
 .bg_page_default {background:url(/assets/background.png) no-repeat top center #dcdcc0;position:fixed;width:100%;height:100%;top:500;left:0;z-index:-1;}
 /*#bg_design {background:url(/assets/bg-design.jpg) no-repeat top center #dcdcc0;position:fixed;width:100%;height:100%;top:0;left:0;z-index:1;}*/
@@ -119,20 +119,18 @@ footer p {
 section {
 	text-align:center;
 	margin:0;
-}
-
-section h1 {
-	width:232px;
-	text-align:center;
-	color:#6e6c67;
-	margin:0 auto;cursor:pointer;
-	text-transform:uppercase;
-	position:relative;
-	z-index:4;
-}
-
-section h1:hover {
-	color:#332568;
+	h1 {
+		width:232px;
+		text-align:center;
+		color:#6e6c67;
+		margin:0 auto;cursor:pointer;
+		text-transform:uppercase;
+		position:relative;
+		z-index:4;
+		&:hover{
+			color:#332568;
+		}
+	}
 }
 
 .thecrowd_hover:hover {
@@ -144,8 +142,16 @@ section h1:hover {
 }
 
 .info-wrapper {background:url(/assets/bg-lines.jpg) repeat top left;display:none;z-index:2;position:relative;}
-.info-wrap-inner {background:url(/assets/sprite.png) no-repeat center -229px;margin:0 auto;text-align:center;position:relative;}
-.info-wrap-inner a {font-height:.3em;}
+
+.info-wrap-inner {
+	background:url(/assets/sprite.png) no-repeat center -229px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	a {
+		font-size:1.2em;
+	}
+}
 
 .slider_wrapper {
 	width:1060px;	
@@ -192,74 +198,65 @@ section h1:hover {
 	margin-right:19px;
 }
 
-.show_details_karla {
+@mixin show_details {
 	display:block;
 	width:22px;
 	height:22px;
 	float:right;
 	margin-right:8px;
+}
+
+.show_details_karla {
+	@include show_details;
+	
 	margin-top:-3px;
 }
 
 .show_details_fabian {
+	@include show_details;
+}
+
+.show_details_norberto {
+	@include show_details;
+	
+	margin-top:18px;
+}
+
+.show_details_haro {
+	@include show_details;
+	
+	margin-top:-6px;
+}
+
+@mixin hide_details {
 	display:block;
-	width:22px;
-	height:22px;
+	width:17px;
+	height:17px;
 	float:right;
 	margin-right:8px;
 }
 
 .hide_details_fabian {
-	display:block;
-	width:17px;
-	height:17px;
-	float:right;
-	margin-right:8px;
+	@include hide_details;
+	
 	margin-top:50px;
 }
 
 .hide_details_karla {
-	display:block;
-	width:17px;
-	height:17px;
-	float:right;
-	margin-right:8px;
+	@include hide_details;
+	
 	margin-top:61px;
 }
 
-.show_details_norberto {
-	display:block;
-	width:22px;
-	height:22px;
-	float:right;
-	margin-right:9px;
-	margin-top:18px;
-}
-
 .hide_details_norberto {
-	display:block;
-	width:17px;
-	height:17px;
-	float:right;
-	margin-right:8px;
+	@include hide_details;
+	
 	margin-top:62px;
 }
 
-.show_details_haro {
-	display:block;
-	width:22px;
-	height:22px;
-	float:right;
-	margin-right:8px;
-	margin-top:-6px;
-}
-
 .hide_details_haro {
-	display:block;
-	width:17px;
-	height:17px;
-	float:right;
-	margin-right:8px;
+	@include hide_details;
+	
 	margin-top:49px;
 }
 
@@ -276,36 +273,36 @@ section h1:hover {
 	text-indent: 15px;
 }
 
-.person_horizontal_fabian_name {
+@mixin person_horizontal_name {	
 	margin-top:15px;
 	color:#000;
+}
+.person_horizontal_fabian_name {
+	@include person_horizontal_name;
+}
+
+.person_horizontal_norberto_name {
+	@include person_horizontal_name;
+}
+
+.person_horizontal_haro_name {
+	@include person_horizontal_name;
+}
+
+.person_horizontal_karla_name {
+	@include person_horizontal_name;
 }
 
 .person_horizontal_fabian_lastname {
 	color:#f19019;
 }
 
-.person_horizontal_karla_name {
-	margin-top:15px;
-	color:#000;
-}
-
 .person_horizontal_karla_lastname {
 	color:#d4d4b2;
 }
 
-.person_horizontal_norberto_name {
-	margin-top:15px;
-	color:#000;
-}
-
 .person_horizontal_norberto_lastname {
 	color:#7bc2c2;
-}
-
-.person_horizontal_haro_name {
-	margin-top:15px;
-	color:#000;
 }
 
 .person_horizontal_haro_lastname {
@@ -323,12 +320,17 @@ section h1:hover {
 	margin-top: 15px;
 }
 
+@mixin transform_rotate($rotation) {
+	-webkit-transform:rotate($rotation);
+	-moz-transform:rotate($rotation);
+	-o-transform: rotate($rotation);
+}
+
 .person_vertical_name {
+	@include transform_rotate(270deg);
+
 	text-transform: uppercase;
 	writing-mode:tb-rl;
-	-webkit-transform:rotate(270deg);
-	-moz-transform:rotate(270deg);
-	-o-transform: rotate(270deg);
 	white-space:nowrap;
 	font-family: 'Oswald', serif;
 	font-size:1.8em;
@@ -561,11 +563,10 @@ section h1:hover {
 	padding-right:20px;
 	height:230px;
 	background-color:#e65e3d;
-}
-
-.mistery_slide p {
-	font-family:'Trebuchet MS', serif;
-	text-align:justify;
+	p {
+		font-family:'Trebuchet MS', serif;
+		text-align:justify;
+	}
 }
 
 .mistery_title {
@@ -644,11 +645,10 @@ section h1:hover {
 	height:690px;
 	filter:Alpha(opacity=90);
 	opacity:0.90;
-}
-
-#content_the_crowd .info-wrap-top-arrow {
-	background:url(/assets/thecrowd_top_arrow.png) no-repeat top center;
-	height:10px;
+	.info-wrap-top-arrow {
+		background:url(/assets/thecrowd_top_arrow.png) no-repeat top center;
+		height:10px;
+	}
 }
 
 #content_sample_work {
@@ -657,11 +657,10 @@ section h1:hover {
 	filter:Alpha(opacity=90);
 	opacity:0.90;
 	font-size:14px;
-}
-
-#content_sample_work .info-wrap-top-arrow {
-	background:url(/assets/samplework_top_arrow.png) no-repeat top center;
-	height:10px;
+	.info-wrap-top-arrow {
+		background:url(/assets/samplework_top_arrow.png) no-repeat top center;
+		height:10px;
+	}
 }
 
 #content_mistery_box  {
@@ -669,32 +668,24 @@ section h1:hover {
 	height:360px;
 	filter:Alpha(opacity=90);
 	opacity:0.90;
+	.info-wrap-top-arrow {
+		background:url(/assets/misterybox_top_arrow.png) no-repeat top center;
+		height:10px;
+	}
 }
 
-#content_mistery_box  .info-wrap-top-arrow {
-	background:url(/assets/misterybox_top_arrow.png) no-repeat top center;
-	height:10px;
-}
 
 #content_hobby_storage {
 	background:url(/assets/bg_samplework.png) repeat #0e0e0e;
-	height:331px;
+	height:280px;
 	filter:Alpha(opacity=90);
 	opacity:0.90;
+	.info-wrap-top-arrow {
+		background:url(/assets/hobbystorage_top_arrow.png) no-repeat top center;
+		height:10px;
+	}
 }
 
-#content_hobby_storage .info-wrap-top-arrow {
-	background:url(/assets/hobbystorage_top_arrow.png) no-repeat top center;
-	height:10px;
-}
-
-section#the_crowd {
-	font-size:105px;
-}
-
-section#sample_work {
-	font-size:90px;
-}
 
 section#mistery_box {
 	font-size:97px;
@@ -705,5 +696,13 @@ section#hobby_storage {
 }
 
 section#make_contact {
-	font-size:85px;
+	font-size:86px;
+}
+
+section#sample_work {
+	font-size:90px;
+}
+
+section#the_crowd {
+	font-size:110px;
 }

@@ -5,103 +5,108 @@
  * background property for each of the five styles below
  */
 
+ /*button mixins
+ and next/prev button hover state*/
+ @mixin bx {
+ 	position:absolute;
+ 	top:30%;
+ 	right:-50px;
+ 	z-index:999;
+ 	width: 24px;
+ 	height: 54px;
+ 	text-indent: -999999px;
+	&:hover {
+		background-position: 0 0;
+	}
+ }
+ 
+ @mixin bx-thecrowd {
+ 	display:block;
+ 	margin-top:250px;
+ 	z-index:999;
+ 	width: 24px;
+ 	height: 54px;
+ }
 
 /*next button*/
 .bx-next {
-	position:absolute;
-	top:30%;
-	right:-50px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
-	text-indent: -999999px;
+	@include bx;
+
 	background: url(/assets/gray_next.png) no-repeat;
 }
 
 .bx-next-thecrowd {
-	display:block;
-	margin-top:250px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
+	@include bx-thecrowd;
+
 	background: url(/assets/gray_next.png) no-repeat;
 }
 
 /*previous button*/
 .bx-prev {
-	position:absolute;
-	top:30%;
-	right:-50px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
-	text-indent: -999999px;
+	@include bx;
+
 	background: url(/assets/gray_prev.png) no-repeat;
 }
 
 .bx-prev-thecrowd {
-	display:block;
-	margin-top:250px;
-	z-index:999;
-	width: 24px;
-	height: 54px;
+	@include bx-thecrowd;
+
 	background: url(/assets/gray_prev.png) no-repeat;
+}
+/*pager links mixins*/
+@mixin bx-pager-links {
+	margin-right: 5px;
+	color: transparent;
+	padding: 3px 8px 3px 6px;
+	font-size:4px;
+	zoom:1;
 }
 
 /*pager links*/
-.bx-pager a {
-	margin-right: 5px;
-	color: transparent;
-	padding: 3px 8px 3px 6px;
-	font-size:.3em;
-	zoom:1;
-	background: url(/assets/hobbystorage_slider_pager.png) no-repeat 0 0px;
-}
-
 .bx-pager2 a {
-	margin-right: 5px;
-	color: transparent;
-	padding: 3px 8px 3px 6px;
-	font-size:.3em;
-	zoom:1;
+	@include bx-pager-links;
+
 	background: url(/assets/samplework_slider_pager.png) no-repeat 0 0px;
 }
 
-/*auto start button*/
-.bx-auto .start {
-	background: url(/assets/gray_auto.png) no-repeat 0 2px;
-	padding-left: 13px;
-}
-
-/*auto stop button*/
-.bx-auto .stop {
-	background: url(/assets/gray_auto.png) no-repeat 0 -14px;
-	padding-left: 13px;
+/*auto start and stop buttons*/
+.bx-auto{
+	text-align: center;
+	padding-top: 15px;
+	a {
+		color: #666;
+		font-size: 12px;
+	}
+	.start {
+		background: url(/assets/gray_auto.png) no-repeat 0 2px;
+		padding-left: 13px;
+	}
+	.stop {
+		background: url(/assets/gray_auto.png) no-repeat 0 -14px;
+		padding-left: 13px;
+	}
 }
 
 /*
  * End color scheme styles
  */
 
-
-/*next/prev button hover state*/
-.bx-next:hover,
-.bx-prev:hover {
-	background-position: 0 0;
-}
-
-/*pager links hover and active states*/
-.bx-pager .pager-active,
-.bx-pager a:hover {
-	background-position:0 -11px;
-}
-
-/*pager wrapper*/
+/*pager links hover and active states
+and pager wrapper*/
 .bx-pager {
 	text-align:center;
 	padding-top: 20px;
 	font-size:12px;
 	color:#666;
+	a {
+		@include bx-pager-links;
+
+		background: url(/assets/hobbystorage_slider_pager.png) no-repeat 0 0px;
+	}
+	.pager-active, a:hover{
+		background-position:0 -10px;
+	}
+
 }
 
 /*captions*/
@@ -111,25 +116,3 @@
 	padding: 7px 0;
 	color: #666;
 }
-
-/*auto controls*/
-.bx-auto {
-	text-align: center;
-	padding-top: 15px;
-}
-
-.bx-auto a {
-	color: #666;
-	font-size: 12px;
-}
-
-
-
-
-
-
-
-
-
-
-
