@@ -1,0 +1,17 @@
+%p#notice= notice
+
+%p
+	%b Title:
+	= @portfolio.title
+%p
+	%b Description:
+	= @portfolio.description
+%p
+	%b Release date:
+	= @portfolio.release_date
+%p
+	%b Image:
+	= image_tag @portfolio.image.url(:medium)
+
+= link_to 'Edit', edit_portfolio_path(@portfolio)
+= link_to 'Back', portfolios_path
