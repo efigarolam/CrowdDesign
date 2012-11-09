@@ -10,7 +10,6 @@
  @mixin bx {
  	position:absolute;
  	top:30%;
- 	right:-50px;
  	z-index:999;
  	width: 24px;
  	height: 54px;
@@ -31,20 +30,19 @@
 /*next button*/
 .bx-next {
 	@include bx;
-
+	right:-50px;
 	background: url(/assets/gray_next.png) no-repeat;
 }
 
 .bx-next-thecrowd {
 	@include bx-thecrowd;
-
 	background: url(/assets/gray_next.png) no-repeat;
 }
 
 /*previous button*/
 .bx-prev {
 	@include bx;
-
+	left:-50px;
 	background: url(/assets/gray_prev.png) no-repeat;
 }
 
@@ -63,11 +61,7 @@
 }
 
 /*pager links*/
-.bx-pager2 a {
-	@include bx-pager-links;
 
-	background: url(/assets/samplework_slider_pager.png) no-repeat 0 0px;
-}
 
 /*auto start and stop buttons*/
 .bx-auto{
@@ -96,17 +90,30 @@ and pager wrapper*/
 .bx-pager {
 	text-align:center;
 	padding-top: 20px;
-	font-size:12px;
+	font-size:3px;
 	color:#666;
 	a {
 		@include bx-pager-links;
-
 		background: url(/assets/hobbystorage_slider_pager.png) no-repeat 0 0px;
 	}
 	.pager-active, a:hover{
 		background-position:0 -10px;
 	}
 
+}
+
+.bx-pager2 {
+	text-align:center;
+	padding-top: 20px;
+	font-size:3px;
+	color:#666;
+	a {
+		@include bx-pager-links;
+		background: url(/assets/samplework_slider_pager.png) no-repeat 0 0px;
+	}
+	.pager-active, a:hover{
+		background-position:0 -10px;
+	}
 }
 
 /*captions*/

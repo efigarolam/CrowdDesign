@@ -518,12 +518,19 @@ section {
 	text-transform:none;
 	color: white;
 	font-size:.75em;
-	width:300px;
+	width:200px;
 }
 
 .float_left {
+	width:70%;
 	margin-top:15px;
 	float:left;
+}
+
+.float_right {
+	width:29%;
+	float:right;
+	margin-right:25px;
 }
 
 .hobby_add_to_cart {
@@ -546,7 +553,7 @@ section {
 }
 
 .margin_left {
-	margin-left:20px;
+	margin-left:-60px;
 }
 
 #mistery_box_slider {
@@ -677,7 +684,7 @@ section {
 
 #content_hobby_storage {
 	background:url(/assets/bg_samplework.png) repeat #0e0e0e;
-	height:280px;
+	height:330px;
 	filter:Alpha(opacity=90);
 	opacity:0.90;
 	.info-wrap-top-arrow {
