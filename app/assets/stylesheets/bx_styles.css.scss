@@ -53,7 +53,7 @@
 	margin-right: 5px;
 	color: transparent;
 	padding: 3px 8px 3px 6px;
-	font-size:4px;
+	font-size:.3em;
 	zoom:1;
 	background: url(/assets/hobbystorage_slider_pager.png) no-repeat 0 0px;
 }
@@ -62,7 +62,7 @@
 	margin-right: 5px;
 	color: transparent;
 	padding: 3px 8px 3px 6px;
-	font-size:4px;
+	font-size:.3em;
 	zoom:1;
 	background: url(/assets/samplework_slider_pager.png) no-repeat 0 0px;
 }
@@ -93,7 +93,7 @@
 /*pager links hover and active states*/
 .bx-pager .pager-active,
 .bx-pager a:hover {
-	background-position:0 -10px;
+	background-position:0 -11px;
 }
 
 /*pager wrapper*/
