@@ -145,9 +145,7 @@ section h1:hover {
 
 .info-wrapper {background:url(/assets/bg-lines.jpg) repeat top left;display:none;z-index:2;position:relative;}
 .info-wrap-inner {background:url(/assets/sprite.png) no-repeat center -229px;margin:0 auto;text-align:center;position:relative;}
-.info-wrap-inner a {
-	font-size:1.2em;
-}
+.info-wrap-inner a {font-height:.3em;}
 
 .slider_wrapper {
 	width:1060px;	
@@ -680,7 +678,7 @@ section h1:hover {
 
 #content_hobby_storage {
 	background:url(/assets/bg_samplework.png) repeat #0e0e0e;
-	height:280px;
+	height:331px;
 	filter:Alpha(opacity=90);
 	opacity:0.90;
 }
@@ -688,6 +686,14 @@ section h1:hover {
 #content_hobby_storage .info-wrap-top-arrow {
 	background:url(/assets/hobbystorage_top_arrow.png) no-repeat top center;
 	height:10px;
+}
+
+section#the_crowd {
+	font-size:105px;
+}
+
+section#sample_work {
+	font-size:90px;
 }
 
 section#mistery_box {
@@ -699,13 +705,5 @@ section#hobby_storage {
 }
 
 section#make_contact {
-	font-size:86px;
-}
-
-section#sample_work {
-	font-size:90px;
-}
-
-section#the_crowd {
-	font-size:110px;
+	font-size:85px;
 }
