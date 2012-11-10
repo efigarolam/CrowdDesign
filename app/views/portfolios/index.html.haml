@@ -5,27 +5,9 @@
       .info-wrap-top-arrow
       .slider_wrapper
         %ul#sample_work_slider
+        -for portfolio in @portfolios
           %li
-            %img{:src => "assets/samplework_slider_example.png", :alt => ""}
-            %p.sample_work_name Magma Rails
-            %p.sample_work_date 2011
-          %li
-            %img{:src => "assets/samplework_slider_example.png", :alt => ""}
-            %p.sample_work_name Magma Rails
-            %p.sample_work_date 2011
-          %li
-            %img{:src => "assets/samplework_slider_example.png", :alt => ""}
-            %p.sample_work_name Magma Rails
-            %p.sample_work_date 2011
-          %li
-            %img{:src => "assets/samplework_slider_example.png", :alt => ""}
-            %p.sample_work_name Magma Rails
-            %p.sample_work_date 2011
-          %li
-            %img{:src => "assets/samplework_slider_example.png", :alt => ""}
-            %p.sample_work_name Magma Rails
-            %p.sample_work_date 2011
-          %li
-            %img{:src => "assets/samplework_slider_example.png", :alt => ""}
-            %p.sample_work_name Magma Rails
-            %p.sample_work_date 2011
+            %img{:src => portfolio.image.url(:medium) , :alt => ""}
+            %p.sample_work_name= portfolio.title
+            %p.sample_work_date= portfolio.release_date
+          
