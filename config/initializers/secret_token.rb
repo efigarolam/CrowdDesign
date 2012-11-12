@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-CrowdDesign::Application.config.secret_token = '23802a647309a1ef9728c9f8462edea143e20e584b2e69ec0a30a43c0de231d1723db179dc87074550d4aedf6596289f9347c29001cba92ed21b242394a96819'
+Bootstrap::Application.config.secret_token = '54542e6a25830a51cb804eda853a07c47668d925e4c4cd102b1a689b9ebf859826d38a9525297ad5a965a2fa74f333b5d6d055b37da4176fc63490968316978f'

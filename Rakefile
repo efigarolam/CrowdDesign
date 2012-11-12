@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-CrowdDesign::Application.load_tasks
+Bootstrap::Application.load_tasks

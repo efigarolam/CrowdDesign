@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-CrowdDesign::Application.initialize!
+Bootstrap::Application.initialize!

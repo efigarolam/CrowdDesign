@@ -1,4 +1,0 @@
-CrowdDesign
-===========
-
-Crowd Design Site
