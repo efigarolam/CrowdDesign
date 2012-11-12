@@ -238,7 +238,10 @@ $(document).ready(function() {
 			changeLogo('sample_logo');
 			resetBackground();
 			changeBackground('bg_samplework');
-			resetFooter();			
+			resetFooter();
+
+			$('#sample_work_slider li a').colorbox({inline:true, width:"1080px", height:"90%", close:""});
+
 		} else {
 			set_hover_by_section('', null);
 			hiddable.hide();
